@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(
         name = "product_table",
+        schema = "test",
         uniqueConstraints = {
                 @UniqueConstraint(name = "title_price_unique",columnNames = {"title_x","price"})
         },
@@ -36,9 +37,11 @@ public class ProductEntity {
     private Integer quantity;
 
     @CreationTimestamp
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
     
     @UpdateTimestamp
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
 }

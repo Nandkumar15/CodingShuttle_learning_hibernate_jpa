@@ -1,6 +1,8 @@
 package com.codingshuttle.jpaTutorial.jpaTutorial.repositories;
 
 import com.codingshuttle.jpaTutorial.jpaTutorial.entities.ProductEntity;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -38,4 +40,8 @@ public interface ProductRepository extends JpaRepository<ProductEntity,Long> {
     @Query("select e from ProductEntity e where e.title=:title1 and price=:price1")
     Optional<ProductEntity>findByTitleAndPrice(String title1,BigDecimal price1);
 
+    List<ProductEntity> findByOrderByPrice();
+    List<ProductEntity> findBy(Sort sortby);
+
+    List<ProductEntity> findByTitleContainingIgnoreCase(String title, Pageable pageable);
 }

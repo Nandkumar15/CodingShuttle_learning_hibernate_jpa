@@ -1,5 +1,26 @@
-insert into test.product_table (price,quantity,sku,title_x)
-values
-(14.2,4,'parle656','parle biscuit'),
-(1325.99,90,'pepsi3465','pepsi cola'),
-(1345.213,43,'dominos234','dominos');
+INSERT INTO test.product_table
+    (price, quantity, sku, title_x, created_at, updated_at)
+VALUES
+(14.2, 4, 'parle656', 'parle biscuit', NOW(), NOW()),
+(1325.99, 90, 'pepsi3465', 'pepsi cola', NOW(), NOW()),
+(1345.213, 43, 'dominos234', 'dominos', NOW(), NOW()),
+(25.5, 12, 'maggi123', 'maggi noodles', NOW(), NOW()),
+(45.75, 20, 'lays567', 'lays potato chips', NOW(), NOW()),
+(60.25, 15, 'coke789', 'coca cola', NOW(), NOW()),
+(35.0, 30, 'oreo456', 'oreo biscuits', NOW(), NOW()),
+(120.99, 8, 'nescafe234', 'nescafe coffee', NOW(), NOW()),
+(18.5, 25, 'kurkure321', 'kurkure snacks', NOW(), NOW()),
+(75.2, 10, 'amul987', 'amul butter', NOW(), NOW()),
+(250.0, 5, 'britannia654', 'britannia cake', NOW(), NOW()),
+(42.99, 18, 'goodday123', 'good day biscuits', NOW(), NOW()),
+(95.5, 14, 'redbull567', 'red bull energy drink', NOW(), NOW()),
+(55.75, 22, 'fanta432', 'fanta orange drink', NOW(), NOW()),
+(32.0, 16, 'sprite876', 'sprite lemon drink', NOW(), NOW()),
+(150.25, 7, 'dairymilk234', 'dairy milk chocolate', NOW(), NOW()),
+(85.99, 11, 'tropicana765', 'tropicana juice', NOW(), NOW()),
+(210.5, 9, 'pizzahut345', 'pizza hut pizza', NOW(), NOW()),
+(28.75, 40, 'yippee678', 'yippee noodles', NOW(), NOW()),
+(65.0, 13, 'motherdairy543', 'mother dairy milk', NOW(), NOW()),
+(110.25, 6, 'himalaya321', 'himalaya face wash', NOW(), NOW()),
+(175.99, 4, 'colgate987', 'colgate toothpaste', NOW(), NOW()),
+(90.5, 17, 'dove456', 'dove soap', NOW(), NOW());
