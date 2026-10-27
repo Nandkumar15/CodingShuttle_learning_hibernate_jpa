@@ -5,7 +5,6 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.swing.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -22,7 +21,7 @@ import java.time.LocalDateTime;
         indexes = {
                 @Index(name = "sku_index",columnList = "sku")
         })
-public class Product {
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
